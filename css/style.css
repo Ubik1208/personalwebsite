@@ -37,6 +37,7 @@ h1 {
     grid-area: proj;
 }
 
+
 #skills{
     grid-area: skills;
 }
@@ -47,4 +48,9 @@ h1 {
 
 #photoOfMe{
     grid-area: photoOfMe;
+}
+
+#photoOfMe img{
+    width: 100%;
+    height:auto;
 }
