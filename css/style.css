@@ -9,22 +9,42 @@ h1 {
     font-weight: bold;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'pageTitle pageTitle navbar'
+                            'aboutMe aboutMe photoOfMe'
+                            'proj proj proj'
+                            'skills skills skills'
+                            'contact contact contact';
+                        }
+
+#pageTitle{
+    grid-area: pageTitle;
+}
+
 #navbar {
+    grid-area: navbar;
 
 }
 
 #about-me{
-
+    grid-area: aboutMe;
 }
 
 #projects{
-
+    grid-area: proj;
 }
 
 #skills{
-
+    grid-area: skills;
 }
 
 #contact{
+    grid-area: contact;
+}
 
+#photoOfMe{
+    grid-area: photoOfMe;
 }
