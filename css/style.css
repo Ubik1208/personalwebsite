@@ -16,32 +16,38 @@ h2 {
     padding-bottom: 1em;
 }
 .grid-container{
+    padding-top: 230px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1em;
     row-gap: 2em;
-    grid-template-areas: 'pageTitle pageTitle navbar'
+    grid-template-areas:
                             'aboutMe aboutMe photoOfMe'
                             'proj proj proj'
                             'skills skills skills'
                             'contact contact contact';
                         }
 
+ header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    opacity: 0.7;
+                        }
+
 #pageTitle{
-    grid-area: pageTitle;
+    display: inline-block;
+    width: 60%;
 }
 
 #navbar {
-    grid-area: navbar;
-   
-
-
+   margin-top: 1em;
 }
 
 #navbar li{
     font-size: 2em;
-    display: inline-block;
+    display: inline;
     
 }
 
@@ -78,5 +84,5 @@ h2 {
 
 #photoOfMe img{
     width: 100%;
-    height:auto;
+    height: auto;
 }
