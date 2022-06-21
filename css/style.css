@@ -6,34 +6,26 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 
-h2 {
+h2.section-title{
     font-size: 2em;
     font-weight: bold;
     padding-bottom: 1em;
 }
-.grid-container{
+.flex-container{
     padding-left: 12em;
-    padding-top: 16em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    column-gap: 1em;
-    row-gap: 2em;
-    grid-template-areas:
-                            'aboutMe aboutMe aboutMe'
-                            'proj proj proj'
-                            'skills skills skills'
-                            'contact contact contact';
+    padding-top: 14em;
+    display: flex;
+    flex-direction: column;
                         }
 
  header{
     width: 100%;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
                         }
@@ -63,7 +55,7 @@ h2 {
 }
 
 #navbar li{
-    font-size: 2em;
+    font-size: 2.5em;
     display: inline;
     
 }
@@ -72,35 +64,6 @@ h2 {
     content: ' /';
 }
 
-#about-me{
-    grid-area: aboutMe;
-    font-size: 1.5em;
-    line-height: 1.5em;
-  
-}
-
-#about-me article{
-    
-}
-
-#projects{
-    grid-area: proj;
-}
 
 
-#skills{
-    grid-area: skills;
-}
 
-#contact{
-    grid-area: contact;
-}
-
-#photoOfMe{
-    grid-area: photoOfMe;
-}
-
-#photoOfMe img{
-    width: 100%;
-    height: auto;
-}
