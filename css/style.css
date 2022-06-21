@@ -23,7 +23,7 @@ h2 {
     column-gap: 1em;
     row-gap: 2em;
     grid-template-areas:
-                            'aboutMe aboutMe photoOfMe'
+                            'aboutMe aboutMe aboutMe'
                             'proj proj proj'
                             'skills skills skills'
                             'contact contact contact';
@@ -34,11 +34,28 @@ h2 {
     position: fixed;
     background-color: #fff;
     opacity: 0.7;
+    display: flex;
+    align-items: center;
                         }
+
+#headerbar{
+    width: 100%;
+}
+
+#lukas {
+    padding-right: 2em;
+}
+#lukas img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 10em;
+    width: 10em;
+    z-index: 10;
+    object-position: right top;
+}
 
 #pageTitle{
     display: inline-block;
-    width: 60%;
 }
 
 #navbar {
