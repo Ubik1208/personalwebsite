@@ -86,6 +86,13 @@ h2.section-title{
     padding-left: 12em;
 }
 
+#listOfSkills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #contact{
     padding-left: 12em;
 }
